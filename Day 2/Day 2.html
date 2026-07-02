@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+
+    <style>
+      
+        /* Universal Selector */
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        /* Element Selector */
+        
+        body {
+            background-color: #f4f4f4;
+        }
+
+       
+        /* ID Selector */
+        
+        #logo {
+            color: yellow;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+      
+        /* Header */
+        
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        /* Hover Selector */
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        
+        /* Hero Section */
+       
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(skyblue, white);
+        }
+
+        /* Class Selector */
+        .hero h1 {
+            font-size: 40px;
+            color: navy;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        /* Button Styling */
+        .btn {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+
+            /* Transition Effect */
+            transition: 0.4s;
+        }
+
+        /* Hover Effect */
+        .btn:hover {
+            background: green;
+            transform: scale(1.1);
+        }
+
+        
+        /* Group Selector */
+       
+        h2,
+        h3 {
+            color: darkblue;
+        }
+
+        
+        /* Grid Layout */
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        /* Card Styling */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+
+            transition: 0.4s;
+        }
+
+        /* Card Hover Effect */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 5px 15px gray;
+        }
+
+        
+        /* Footer */
+        
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        /* Media Query for Tablet */
+       
+        @media(max-width:768px) {
+
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+        }
+
+        
+        /* Media Query for Mobile */
+        
+        @media(max-width:480px) {
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <nav>
+
+            <!-- Website Logo -->
+            <h2 id="logo">MySite</h2>
+
+            <!-- Navigation Menu -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Welcome to My Responsive Website</h1>
+
+        <p>
+            This webpage demonstrates CSS Selectors,
+            Grid Layout, Media Queries, Hover Effects,
+            and Transitions.
+        </p>
+
+        <button class="btn">Get Started</button>
+
+    </section>
+
+    <!-- Features Section -->
+    <section>
+
+        <h2 style="text-align:center; margin-top:30px;">
+            Our Features
+        </h2>
+
+        <!-- Grid Container -->
+        <div class="container">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Creates the structure of a webpage.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Styles the webpage beautifully.</p>
+            </div>
+
+            <div class="card">
+                <h3>Responsive</h3>
+                <p>Works perfectly on mobile devices.</p>
+            </div>
+
+            <div class="card">
+                <h3>Grid</h3>
+                <p>Creates responsive layouts.</p>
+            </div>
+
+            <div class="card">
+                <h3>Hover</h3>
+                <p>Interactive animations using hover.</p>
+            </div>
+
+            <div class="card">
+                <h3>Transition</h3>
+                <p>Smooth animation effects.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 My Responsive Landing Page
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

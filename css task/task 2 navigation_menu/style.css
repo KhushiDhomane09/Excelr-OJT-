@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    text-align:center;
+    margin-top:20px;
+}
+
+ul{
+    list-style:none;
+    background-color:#333;
+    text-align:center;
+    padding:15px;
+}
+
+li{
+    display:inline;
+    margin:0 15px;
+}
+
+.nav-link{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+}
+
+.nav-link:hover{
+    background-color:royalblue;
+    border-radius:5px;
+}
