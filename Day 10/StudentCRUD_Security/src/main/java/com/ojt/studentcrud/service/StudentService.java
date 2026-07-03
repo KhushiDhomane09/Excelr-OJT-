@@ -20,4 +20,12 @@ public class StudentService {
     public List<Student> getAllStudents() {
         return repository.findAll();
     }
+
+    public Student getStudentById(int id) {
+        return repository.findById(id).orElse(null);
+    }
+
+    public void deleteStudent(int id) {
+        repository.deleteById(id);
+    }
 }
